@@ -1,13 +1,6 @@
 import Metrics from "./Metrics";
 
-const ChatForm = ({
-  prompt,
-  setPrompt,
-  onSubmit,
-  handleFileUpload,
-  metrics,
-  completion,
-}) => {
+const ChatForm = ({ prompt, setPrompt, onSubmit, metrics, completion }) => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     onSubmit(prompt);

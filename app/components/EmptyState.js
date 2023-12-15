@@ -2,18 +2,16 @@ export default function EmptyState({ setOpen, setPrompt }) {
   return (
     <div className="mt-12 sm:mt-24 space-y-6 text-gray-400 text-base mx-8 sm:mx-4 sm:text-2xl leading-12">
       <p>
-        {" "}
-        Customize Mixtral&apos;s personality by clicking the{" "}
-        <button
-          className="prompt-button inline-flex items-center "
-          onClick={() => setOpen(true)}
-        >
-          settings{" "}
-        </button>{" "}
-        button.
+        Mistral 8x7B is a high-quality mixture of experts model with open
+        weights, created by{" "}
+        <a className="prompt-button" href="https://mistral.ai">
+          Mistral AI
+        </a>
+        . It outperforms Llama 2 70B on most benchmarks with 6x faster
+        inference, and matches or outputs GPT3.5 on most benchmarks.{" "}
       </p>
       <p>
-        I can{" "}
+        Mixtral can{" "}
         <button
           className="prompt-button"
           onClick={() =>
