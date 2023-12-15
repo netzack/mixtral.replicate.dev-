@@ -20,7 +20,11 @@ const Message = ({ message, isUser }) => {
         </span>
       ) : (
         <span className="text-xl sm:text-2xl" title="AI">
-          <img src="/static/mistral.png" alt="mistral" />
+          <img
+            className="h-6 w-6"
+            src="/static/mistral_logo.png"
+            alt="mistral"
+          />
         </span>
       )}
 
